@@ -1,0 +1,364 @@
+/* ========================================
+   ENROL / PARTNER QUOTE BANNER
+======================================== */
+
+.enrol-partner-quote {
+    position: relative;
+
+    min-height: 500px;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND
+======================================== */
+
+.enrol-partner-quote__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../../images/enrol-partner/quote-banner.png");
+
+    background-size: cover;
+
+    background-position: center center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   DARK OVERLAY
+======================================== */
+
+.enrol-partner-quote__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(2, 33, 26, 0.22) 0%,
+            rgba(2, 33, 26, 0.30) 30%,
+            rgba(2, 33, 26, 0.52) 62%,
+            rgba(2, 33, 26, 0.88) 100%
+        );
+}
+
+
+/* ========================================
+   INNER
+======================================== */
+
+.enrol-partner-quote__inner {
+    position: relative;
+
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* ========================================
+   MAIN QUOTE
+======================================== */
+
+.enrol-partner-quote__content {
+    width: min(100%, 1050px);
+
+    margin: auto;
+
+    text-align: center;
+}
+
+
+.enrol-partner-quote blockquote {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        42px,
+        4.5vw,
+        66px
+    );
+
+    font-style: italic;
+    font-weight: 400;
+
+    line-height: 1.12;
+
+    letter-spacing: -0.025em;
+
+    text-shadow:
+        0 3px 16px
+        rgba(0, 0, 0, 0.25);
+}
+
+
+/* ========================================
+   GOLD DIVIDER
+======================================== */
+
+.enrol-partner-quote__divider {
+    margin-top: 26px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+}
+
+
+.enrol-partner-quote__divider span {
+    width: 55px;
+    height: 2px;
+
+    display: block;
+
+    background:
+        var(--gold);
+}
+
+
+.enrol-partner-quote__divider i {
+    width: 8px;
+    height: 8px;
+
+    display: block;
+
+    background:
+        var(--gold);
+
+    border-radius: 50%;
+}
+
+
+/* ========================================
+   SOURCE
+======================================== */
+
+.enrol-partner-quote__source {
+    margin: 18px 0 0;
+
+    color:
+        rgba(255, 255, 255, 0.94);
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.34em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   BOTTOM MOTTO
+======================================== */
+
+.enrol-partner-quote__motto {
+    width: 100%;
+
+    margin-top: auto;
+
+    padding-bottom: 22px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+}
+
+
+.enrol-partner-quote__motto p {
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, 0.88);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.30em;
+
+    text-transform: uppercase;
+
+    white-space: nowrap;
+}
+
+
+.enrol-partner-quote__motto b {
+    margin-inline: 10px;
+
+    color:
+        var(--gold);
+
+    font-size: 10px;
+
+    font-weight: 400;
+}
+
+
+.enrol-partner-quote__motto-line {
+    width: 170px;
+    height: 1px;
+
+    display: block;
+
+    background:
+        rgba(226, 173, 55, 0.65);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .enrol-partner-quote {
+        min-height: 440px;
+    }
+
+
+    .enrol-partner-quote__inner {
+        min-height: 440px;
+    }
+
+
+    .enrol-partner-quote blockquote {
+        max-width: 780px;
+
+        margin-inline: auto;
+
+        font-size: clamp(
+            36px,
+            6vw,
+            52px
+        );
+    }
+
+
+    .enrol-partner-quote__motto-line {
+        width: 110px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .enrol-partner-quote {
+        min-height: 400px;
+    }
+
+
+    .enrol-partner-quote__background {
+        background-position:
+            60% center;
+    }
+
+
+    .enrol-partner-quote__inner {
+        min-height: 400px;
+
+        justify-content: center;
+    }
+
+
+    .enrol-partner-quote__content {
+        width: 100%;
+
+        padding-top: 20px;
+    }
+
+
+    .enrol-partner-quote blockquote {
+        max-width: 430px;
+
+        margin-inline: auto;
+
+        font-size: clamp(
+            30px,
+            9vw,
+            40px
+        );
+
+        line-height: 1.16;
+    }
+
+
+    .enrol-partner-quote blockquote br {
+        display: none;
+    }
+
+
+    .enrol-partner-quote__divider {
+        margin-top: 20px;
+    }
+
+
+    .enrol-partner-quote__divider span {
+        width: 40px;
+    }
+
+
+    .enrol-partner-quote__source {
+        font-size: 10px;
+
+        letter-spacing: 0.24em;
+    }
+
+
+    .enrol-partner-quote__motto {
+        padding-bottom: 16px;
+
+        gap: 10px;
+    }
+
+
+    .enrol-partner-quote__motto p {
+        font-size: 8px;
+
+        letter-spacing: 0.17em;
+    }
+
+
+    .enrol-partner-quote__motto b {
+        margin-inline: 5px;
+    }
+
+
+    .enrol-partner-quote__motto-line {
+        width: 36px;
+    }
+
+}

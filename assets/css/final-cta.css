@@ -1,0 +1,404 @@
+/* ========================================
+   FINAL CTA
+======================================== */
+
+.final-cta {
+    position: relative;
+
+    min-height: 560px;
+
+    overflow: hidden;
+
+    color: var(--white);
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND
+======================================== */
+
+.final-cta__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../images/background-image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   OVERLAY
+======================================== */
+
+.final-cta__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background: linear-gradient(
+        90deg,
+        rgba(3, 37, 31, 0.90) 0%,
+        rgba(3, 37, 31, 0.78) 32%,
+        rgba(3, 37, 31, 0.40) 55%,
+        rgba(3, 37, 31, 0.08) 78%
+    );
+}
+
+
+/* ========================================
+   INNER
+======================================== */
+
+.final-cta__inner {
+    position: relative;
+
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.final-cta__content {
+    width: min(620px, 52%);
+
+    padding: 65px 0;
+}
+
+
+/* Eyebrow */
+
+.final-cta__eyebrow {
+    margin: 0 0 25px;
+
+    color: var(--gold);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+/* Title */
+
+.final-cta__title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        54px,
+        5.5vw,
+        78px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+}
+
+
+.final-cta__title span {
+    color: var(--gold);
+}
+
+
+/* Description */
+
+.final-cta__description {
+    max-width: 580px;
+
+    margin: 28px 0 0;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.95
+    );
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.final-cta__button {
+    width: min(310px, 100%);
+
+    min-height: 66px;
+
+    margin-top: 32px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--green-dark);
+
+    background: var(--gold);
+
+    border-radius: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.final-cta__button:hover {
+    background: var(--gold-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.final-cta__button span {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 24px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.final-cta__button:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   MOTTO
+======================================== */
+
+.final-cta__motto {
+    margin: 30px 0 0;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+.final-cta__motto span {
+    margin-inline: 8px;
+}
+
+
+.final-cta__motto strong {
+    color: var(--gold);
+
+    font-weight: 600;
+}
+
+
+/* ========================================
+   HANDWRITING
+======================================== */
+
+.final-cta__handwriting {
+    position: absolute;
+
+    top: 55px;
+    right: 10px;
+
+    color: var(--green-dark);
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: clamp(
+        42px,
+        4vw,
+        62px
+    );
+
+    font-style: italic;
+
+    line-height: 0.95;
+
+    transform: rotate(-4deg);
+}
+
+
+.final-cta__handwriting span {
+    width: 120px;
+    height: 4px;
+
+    margin:
+        20px 0
+        0
+        40px;
+
+    display: block;
+
+    background: var(--gold);
+
+    transform: rotate(-8deg);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .final-cta,
+    .final-cta__inner {
+        min-height: 600px;
+    }
+
+
+    .final-cta__content {
+        width: 60%;
+    }
+
+
+    .final-cta__background {
+        background-position: 58% center;
+    }
+
+
+    .final-cta__handwriting {
+        right: 25px;
+
+        font-size: 40px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .final-cta,
+    .final-cta__inner {
+        min-height: 680px;
+    }
+
+
+    .final-cta__background {
+        background-position: 68% center;
+    }
+
+
+    .final-cta__overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(3, 37, 31, 0.96) 0%,
+            rgba(3, 37, 31, 0.86) 48%,
+            rgba(3, 37, 31, 0.48) 100%
+        );
+    }
+
+
+    .final-cta__inner {
+        align-items: flex-end;
+    }
+
+
+    .final-cta__content {
+        width: 100%;
+
+        padding: 70px 0 50px;
+    }
+
+
+    .final-cta__eyebrow {
+        font-size: 11px;
+
+        letter-spacing: 0.24em;
+    }
+
+
+    .final-cta__title {
+        font-size: clamp(
+            44px,
+            13vw,
+            60px
+        );
+    }
+
+
+    .final-cta__description {
+        max-width: 460px;
+
+        font-size: 17px;
+    }
+
+
+    .final-cta__button {
+        min-height: 60px;
+
+        font-size: 17px;
+    }
+
+
+    .final-cta__motto {
+        font-size: 10px;
+
+        letter-spacing: 0.2em;
+    }
+
+
+    .final-cta__handwriting {
+        display: none;
+    }
+
+}

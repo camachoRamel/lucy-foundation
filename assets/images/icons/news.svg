@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>News</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 24 44 10v44L8 40Z"/><path d="M44 24h8c3 0 4 2 4 5v6c0 3-1 5-4 5h-8"/><path d="m17 42 4 12h8l-4-10"/>
+  </g>
+</svg>

@@ -1,0 +1,250 @@
+/* ========================================
+   ABOUT VISION BANNER
+======================================== */
+
+.about-vision-banner {
+    position: relative;
+
+    min-height: 720px;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND
+======================================== */
+
+.about-vision-banner__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../../images/about/vision-banner.png");
+
+    background-size: cover;
+
+    background-position:
+        center center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   OVERLAY
+======================================== */
+
+.about-vision-banner__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(2, 35, 28, 0.62) 0%,
+            rgba(2, 35, 28, 0.48) 28%,
+            rgba(2, 35, 28, 0.18) 55%,
+            rgba(2, 35, 28, 0.02) 80%
+        );
+}
+
+
+/* ========================================
+   INNER
+======================================== */
+
+.about-vision-banner__inner {
+    min-height: 720px;
+
+    display: flex;
+
+    align-items: center;
+}
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.about-vision-banner__quote {
+    width: min(
+        650px,
+        48%
+    );
+}
+
+
+.about-vision-banner__quote blockquote {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        48px,
+        4.6vw,
+        68px
+    );
+
+    font-style: italic;
+
+    font-weight: 400;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.025em;
+}
+
+
+/* Gold line */
+
+.about-vision-banner__line {
+    width: 90px;
+    height: 3px;
+
+    display: block;
+
+    margin-top: 35px;
+
+    background: var(--gold);
+}
+
+
+/* ========================================
+   SMALL DESKTOP
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .about-vision-banner,
+    .about-vision-banner__inner {
+        min-height: 650px;
+    }
+
+
+    .about-vision-banner__quote {
+        width: 55%;
+    }
+
+
+    .about-vision-banner__quote blockquote {
+        font-size: clamp(
+            44px,
+            4.8vw,
+            60px
+        );
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .about-vision-banner,
+    .about-vision-banner__inner {
+        min-height: 600px;
+    }
+
+
+    .about-vision-banner__background {
+        background-position:
+            58% center;
+    }
+
+
+    .about-vision-banner__overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(2, 35, 28, 0.72) 0%,
+                rgba(2, 35, 28, 0.50) 50%,
+                rgba(2, 35, 28, 0.15) 100%
+            );
+    }
+
+
+    .about-vision-banner__quote {
+        width: 65%;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .about-vision-banner,
+    .about-vision-banner__inner {
+        min-height: 580px;
+    }
+
+
+    .about-vision-banner__background {
+        background-position:
+            66% center;
+    }
+
+
+    .about-vision-banner__overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(2, 35, 28, 0.86) 0%,
+                rgba(2, 35, 28, 0.65) 55%,
+                rgba(2, 35, 28, 0.25) 100%
+            );
+    }
+
+
+    .about-vision-banner__inner {
+        align-items: flex-end;
+    }
+
+
+    .about-vision-banner__quote {
+        width: 100%;
+
+        padding-bottom: 65px;
+    }
+
+
+    .about-vision-banner__quote blockquote {
+        max-width: 480px;
+
+        font-size: clamp(
+            38px,
+            11vw,
+            50px
+        );
+
+        line-height: 1.1;
+    }
+
+
+    .about-vision-banner__line {
+        width: 70px;
+
+        margin-top: 28px;
+    }
+
+}

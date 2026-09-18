@@ -1,0 +1,378 @@
+/* ========================================
+   HERO
+======================================== */
+
+.hero {
+    position: relative;
+
+    min-height: 710px;
+
+    overflow: hidden;
+
+    color: var(--white);
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND IMAGE
+======================================== */
+
+.hero__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../images/hero.png");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   GREEN OVERLAY
+======================================== */
+
+.hero__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background: linear-gradient(
+        90deg,
+        rgba(3, 48, 37, 0.98) 0%,
+        rgba(3, 48, 37, 0.93) 23%,
+        rgba(3, 48, 37, 0.66) 39%,
+        rgba(3, 48, 37, 0.20) 58%,
+        rgba(3, 48, 37, 0.04) 78%
+    );
+}
+
+
+/* ========================================
+   CONTENT CONTAINER
+======================================== */
+
+.hero__inner {
+    width: min(
+        calc(100% - 120px),
+        var(--container)
+    );
+
+    min-height: 710px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+}
+
+
+.hero__content {
+    width: min(610px, 50%);
+
+    padding: 55px 0 45px;
+}
+
+
+/* ========================================
+   EYEBROW
+======================================== */
+
+.hero__eyebrow {
+    margin: 0 0 28px;
+
+    color: var(--gold);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.65;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.hero__title {
+    max-width: 600px;
+
+    margin: 0;
+
+    color: var(--white);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        58px,
+        5.3vw,
+        78px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.03;
+
+    letter-spacing: -0.03em;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.hero__description {
+    max-width: 570px;
+
+    margin: 30px 0 0;
+
+    color: rgba(
+        255,
+        255,
+        255,
+        0.95
+    );
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   ACTION BUTTONS
+======================================== */
+
+.hero__actions {
+    margin-top: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.hero__actions .btn {
+    min-width: 245px;
+}
+
+
+/* ========================================
+   MOTTO
+======================================== */
+
+.hero__motto {
+    margin: 46px 0 0;
+
+    color: var(--gold);
+
+    font-size: 17px;
+    font-weight: 700;
+
+    letter-spacing: 0.33em;
+
+    text-transform: uppercase;
+}
+
+
+.hero__motto span {
+    margin-inline: 7px;
+}
+
+
+/* ========================================
+   SMALL DESKTOP
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .hero__inner {
+        width: min(
+            calc(100% - 70px),
+            var(--container)
+        );
+    }
+
+
+    .hero__content {
+        width: 55%;
+    }
+
+
+    .hero__title {
+        font-size: clamp(
+            52px,
+            5vw,
+            70px
+        );
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .hero,
+    .hero__inner {
+        min-height: 650px;
+    }
+
+
+    .hero__inner {
+        width: calc(100% - 50px);
+    }
+
+
+    .hero__content {
+        width: 65%;
+    }
+
+
+    .hero__title {
+        font-size: clamp(
+            46px,
+            7vw,
+            62px
+        );
+    }
+
+
+    .hero__description {
+        font-size: 20px;
+    }
+
+
+    .hero__actions {
+        gap: 14px;
+    }
+
+
+    .hero__actions .btn {
+        min-width: 200px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .hero,
+    .hero__inner {
+        min-height: 700px;
+    }
+
+
+    /* Shift image so the student stays visible */
+
+    .hero__background {
+        background-position: 62% center;
+    }
+
+
+    /* Darker overlay for readability */
+
+    .hero__overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(3, 48, 37, 0.97) 0%,
+            rgba(3, 48, 37, 0.91) 45%,
+            rgba(3, 48, 37, 0.58) 100%
+        );
+    }
+
+
+    .hero__inner {
+        width: calc(100% - 40px);
+
+        align-items: flex-end;
+    }
+
+
+    .hero__content {
+        width: 100%;
+
+        padding: 70px 0 50px;
+    }
+
+
+    .hero__eyebrow {
+        margin-bottom: 20px;
+
+        font-size: 12px;
+
+        letter-spacing: 0.24em;
+    }
+
+
+    .hero__title {
+        max-width: 500px;
+
+        font-size: clamp(
+            44px,
+            13vw,
+            58px
+        );
+    }
+
+
+    .hero__description {
+        max-width: 470px;
+
+        font-size: 18px;
+    }
+
+
+    .hero__actions {
+        max-width: 340px;
+
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .hero__actions .btn {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    .hero__motto {
+        margin-top: 32px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.18em;
+    }
+
+}

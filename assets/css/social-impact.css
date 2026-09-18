@@ -1,0 +1,560 @@
+/* ========================================
+   SOCIAL IMPACT
+======================================== */
+
+.social-impact {
+    width: 100%;
+}
+
+
+/* ========================================
+   FEATURE
+======================================== */
+
+.social-impact__feature {
+    position: relative;
+
+    min-height: 680px;
+
+    overflow: hidden;
+
+    color: var(--white);
+
+    isolation: isolate;
+}
+
+
+.social-impact__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../images/background-image.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.social-impact__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background: linear-gradient(
+        90deg,
+        rgba(2, 48, 36, 0.98) 0%,
+        rgba(2, 48, 36, 0.93) 24%,
+        rgba(2, 48, 36, 0.72) 39%,
+        rgba(2, 48, 36, 0.25) 57%,
+        rgba(2, 48, 36, 0) 78%
+    );
+}
+
+
+.social-impact__feature-inner {
+    position: relative;
+
+    min-height: 680px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.social-impact__content {
+    width: min(590px, 48%);
+
+    padding: 70px 0;
+}
+
+
+.social-impact__eyebrow {
+    margin-bottom: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.social-impact__eyebrow span {
+    color: var(--gold);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+.social-impact__eyebrow i {
+    width: 75px;
+    height: 2px;
+
+    display: block;
+
+    background: var(--gold);
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.social-impact__title {
+    margin: 0;
+
+    color: var(--white);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        58px,
+        6vw,
+        86px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.04em;
+}
+
+
+.social-impact__title strong {
+    color: var(--gold);
+
+    font-weight: 400;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.social-impact__description {
+    max-width: 530px;
+
+    margin: 36px 0 0;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    line-height: 1.55;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.social-impact__button {
+    width: min(260px, 100%);
+
+    min-height: 68px;
+
+    margin-top: 38px;
+
+    padding: 0 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: var(--green-dark);
+
+    background: var(--gold);
+
+    border-radius: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 19px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.social-impact__button:hover {
+    background: var(--gold-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.social-impact__button span:last-child {
+    font-family: Arial, sans-serif;
+
+    font-size: 25px;
+}
+
+
+/* ========================================
+   HANDWRITING
+======================================== */
+
+.social-impact__handwriting {
+    position: absolute;
+
+    top: 65px;
+    right: 20px;
+
+    color: var(--green-dark);
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: clamp(
+        42px,
+        4vw,
+        64px
+    );
+
+    font-style: italic;
+
+    line-height: 0.95;
+
+    transform: rotate(-5deg);
+}
+
+
+.social-impact__handwriting span {
+    width: 120px;
+    height: 4px;
+
+    margin-top: 24px;
+    margin-left: 45px;
+
+    display: block;
+
+    background: var(--gold);
+
+    transform: rotate(-10deg);
+}
+
+
+/* ========================================
+   BENEFITS STRIP
+======================================== */
+
+.social-impact__benefits {
+    padding: 38px 0 48px;
+
+    background: var(--cream);
+}
+
+
+.social-impact__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+}
+
+
+.social-impact-card {
+    padding: 0 35px;
+
+    text-align: center;
+}
+
+
+.social-impact-card:not(:last-child) {
+    border-right:
+        1px solid rgba(11, 59, 45, 0.18);
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.social-impact-card__icon {
+    width: 92px;
+    height: 92px;
+
+    margin: 0 auto 15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gold-dark);
+
+    background:
+        rgba(226, 173, 55, 0.09);
+
+    border-radius: 50%;
+}
+
+
+.social-impact-card__icon svg {
+    width: 48px;
+    height: 48px;
+
+    fill: currentColor;
+}
+
+
+/* ========================================
+   BENEFIT TEXT
+======================================== */
+
+.social-impact-card h3 {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 22px;
+
+    line-height: 1.2;
+}
+
+
+.social-impact-card p {
+    max-width: 250px;
+
+    margin: 12px auto 0;
+
+    color: #374a43;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.35;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .social-impact__feature,
+    .social-impact__feature-inner {
+        min-height: 640px;
+    }
+
+
+    .social-impact__content {
+        width: 60%;
+    }
+
+
+    .social-impact__background {
+        background-position: 58% center;
+    }
+
+
+    .social-impact__handwriting {
+        right: 30px;
+
+        font-size: 42px;
+    }
+
+
+    .social-impact__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .social-impact-card {
+        padding: 35px;
+    }
+
+
+    .social-impact-card:not(:last-child) {
+        border-right: 0;
+    }
+
+
+    .social-impact-card:nth-child(odd) {
+        border-right:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    .social-impact-card:nth-child(-n + 2) {
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .social-impact__feature {
+        min-height: 720px;
+    }
+
+
+    .social-impact__feature-inner {
+        min-height: 720px;
+
+        align-items: flex-end;
+    }
+
+
+    .social-impact__background {
+        background-position: 65% center;
+    }
+
+
+    .social-impact__overlay {
+        background: linear-gradient(
+            90deg,
+            rgba(2, 48, 36, 0.96) 0%,
+            rgba(2, 48, 36, 0.87) 50%,
+            rgba(2, 48, 36, 0.48) 100%
+        );
+    }
+
+
+    .social-impact__content {
+        width: 100%;
+
+        padding: 70px 0 55px;
+    }
+
+
+    .social-impact__eyebrow {
+        margin-bottom: 25px;
+    }
+
+
+    .social-impact__eyebrow span {
+        font-size: 11px;
+
+        letter-spacing: 0.25em;
+    }
+
+
+    .social-impact__eyebrow i {
+        width: 45px;
+    }
+
+
+    .social-impact__title {
+        max-width: 500px;
+
+        font-size: clamp(
+            48px,
+            14vw,
+            64px
+        );
+    }
+
+
+    .social-impact__description {
+        max-width: 450px;
+
+        margin-top: 25px;
+
+        font-size: 17px;
+    }
+
+
+    .social-impact__button {
+        min-height: 60px;
+
+        margin-top: 28px;
+
+        font-size: 17px;
+    }
+
+
+    /* Hide decorative handwriting
+       on smaller screens */
+
+    .social-impact__handwriting {
+        display: none;
+    }
+
+
+    /* Benefits */
+
+    .social-impact__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .social-impact-card {
+        padding: 32px 15px;
+    }
+
+
+    .social-impact-card:nth-child(odd),
+    .social-impact-card:not(:last-child),
+    .social-impact-card:nth-child(-n + 2) {
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    .social-impact-card:last-child {
+        border-bottom: 0;
+    }
+
+
+    .social-impact-card__icon {
+        width: 78px;
+        height: 78px;
+    }
+
+
+    .social-impact-card__icon svg {
+        width: 40px;
+        height: 40px;
+    }
+
+}

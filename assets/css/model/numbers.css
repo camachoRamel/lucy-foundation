@@ -1,0 +1,356 @@
+/* ========================================
+   MODEL NUMBERS
+======================================== */
+
+.model-numbers {
+    padding: 80px 0 95px;
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.model-numbers__header {
+    margin-bottom: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.model-numbers__eyebrow,
+.model-numbers__statement {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.31em;
+
+    text-transform: uppercase;
+}
+
+
+.model-numbers__eyebrow {
+    color: var(--gold-dark);
+}
+
+
+.model-numbers__statement {
+    color: #68716e;
+
+    text-align: right;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.model-numbers__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    align-items: stretch;
+}
+
+
+/* ========================================
+   NUMBER ITEM
+======================================== */
+
+.model-number {
+    min-width: 0;
+
+    min-height: 210px;
+
+    padding: 10px 55px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.model-number:first-child {
+    padding-left: 35px;
+}
+
+
+.model-number:last-child {
+    padding-right: 35px;
+}
+
+
+/* Vertical dividers */
+
+.model-number:not(:last-child) {
+    border-right:
+        1px solid rgba(11, 59, 45, 0.18);
+}
+
+
+/* ========================================
+   LARGE NUMBER
+======================================== */
+
+.model-number__value {
+    margin: 0;
+
+    color: var(--green-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        64px,
+        6vw,
+        90px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.04em;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.model-number__description {
+    margin: 22px 0 0;
+
+    color: #354742;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 23px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   AFRICA ITEM
+======================================== */
+
+.model-number--africa {
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.model-number__africa {
+    width: 92px;
+    height: 92px;
+
+    object-fit: contain;
+}
+
+
+.model-number--africa
+.model-number__description {
+    margin-top: 18px;
+}
+
+
+/* ========================================
+   SMALL DESKTOP
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .model-number {
+        padding:
+            10px
+            35px;
+    }
+
+
+    .model-number__description {
+        font-size: 20px;
+    }
+
+
+    .model-number__africa {
+        width: 78px;
+        height: 78px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .model-numbers {
+        padding:
+            70px 0
+            80px;
+    }
+
+
+    .model-numbers__header {
+        margin-bottom: 35px;
+
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 12px;
+    }
+
+
+    .model-numbers__statement {
+        text-align: left;
+    }
+
+
+    .model-numbers__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .model-number {
+        min-height: 220px;
+
+        padding: 35px;
+    }
+
+
+    .model-number:first-child,
+    .model-number:last-child {
+        padding: 35px;
+    }
+
+
+    /* Reset desktop dividers */
+
+    .model-number:not(:last-child) {
+        border-right: 0;
+    }
+
+
+    /* Vertical center divider */
+
+    .model-number:nth-child(odd) {
+        border-right:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    /* Horizontal divider */
+
+    .model-number:nth-child(-n + 2) {
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .model-numbers {
+        padding:
+            55px 0
+            65px;
+    }
+
+
+    .model-numbers__eyebrow,
+    .model-numbers__statement {
+        font-size: 11px;
+
+        letter-spacing: 0.23em;
+    }
+
+
+    .model-numbers__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .model-number {
+        min-height: 0;
+
+        padding:
+            32px
+            10px;
+    }
+
+
+    .model-number:first-child,
+    .model-number:last-child {
+        padding:
+            32px
+            10px;
+    }
+
+
+    .model-number:nth-child(odd),
+    .model-number:not(:last-child),
+    .model-number:nth-child(-n + 2) {
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    .model-number:last-child {
+        border-bottom: 0;
+    }
+
+
+    .model-number__value {
+        font-size: 58px;
+    }
+
+
+    .model-number__description {
+        margin-top: 14px;
+
+        font-size: 19px;
+    }
+
+
+    .model-number--africa {
+        align-items: flex-start;
+
+        text-align: left;
+    }
+
+
+    .model-number__africa {
+        width: 70px;
+        height: 70px;
+    }
+
+}

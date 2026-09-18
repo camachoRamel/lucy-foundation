@@ -1,0 +1,299 @@
+/* ========================================
+   CAMPUS INTRO
+======================================== */
+
+.about-campus-intro {
+    padding: 110px 0 70px;
+
+    background: var(--cream);
+}
+
+
+.about-campus-intro__inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.45fr)
+        minmax(280px, 0.75fr);
+
+    gap: clamp(40px, 6vw, 110px);
+
+    align-items: start;
+}
+
+
+/* ========================================
+   LEFT SIDE
+======================================== */
+
+.about-campus-intro__main {
+    max-width: 900px;
+}
+
+
+.about-campus-intro__eyebrow {
+    margin: 0 0 28px;
+
+    color: var(--gold-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.34em;
+
+    text-transform: uppercase;
+}
+
+
+.about-campus-intro__title {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(50px, 5.8vw, 82px);
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.04em;
+}
+
+
+.about-campus-intro__description {
+    max-width: 930px;
+
+    margin: 34px 0 0;
+
+    color: #324740;
+
+    font-size: 20px;
+
+    line-height: 1.65;
+}
+
+
+/* ========================================
+   RIGHT SIDE
+======================================== */
+
+.about-campus-intro__aside {
+    padding-top: 6px;
+}
+
+
+.about-campus-intro__aside-text {
+    margin: 0;
+
+    color: #324740;
+
+    font-size: 20px;
+
+    line-height: 1.6;
+}
+
+
+.about-campus-intro__aside-link {
+    margin: 34px 0 0;
+
+    color: var(--green);
+
+    font-size: 20px;
+
+    line-height: 1.5;
+}
+
+
+.about-campus-intro__controls {
+    margin-top: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+}
+
+
+.about-campus-intro__control {
+    width: 86px;
+    height: 86px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 0;
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition:
+        opacity 0.2s ease,
+        visibility 0.2s ease;
+}
+
+.about-campus-intro__controls.is-hidden {
+    opacity: 0;
+
+    visibility: hidden;
+
+    pointer-events: none;
+}
+
+
+.about-campus-intro__control:disabled {
+    opacity: 0.35;
+
+    cursor: default;
+
+    transform: none;
+}
+
+.about-campus-intro__control span {
+    display: block;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 58px;
+
+    line-height: 1;
+
+    transform: translateY(-2px);
+}
+
+
+/* previous */
+
+.about-campus-intro__control--prev {
+    color: var(--green);
+
+    background: #f0f1e8;
+}
+
+
+.about-campus-intro__control--prev:hover {
+    transform: translateY(-2px);
+
+    background: #e5e8dc;
+}
+
+
+/* next */
+
+.about-campus-intro__control--next {
+    color: #ffffff;
+
+    background: var(--gold);
+}
+
+
+.about-campus-intro__control--next:hover {
+    transform: translateY(-2px);
+
+    background: var(--gold-dark);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .about-campus-intro {
+        padding: 90px 0 60px;
+    }
+
+
+    .about-campus-intro__inner {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .about-campus-intro__main,
+    .about-campus-intro__description {
+        max-width: none;
+    }
+
+
+    .about-campus-intro__aside {
+        max-width: 620px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .about-campus-intro {
+        padding: 65px 0 45px;
+    }
+
+
+    .about-campus-intro__eyebrow {
+        margin-bottom: 18px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.25em;
+    }
+
+
+    .about-campus-intro__title {
+        font-size: clamp(40px, 12vw, 54px);
+    }
+
+
+    .about-campus-intro__description,
+    .about-campus-intro__aside-text,
+    .about-campus-intro__aside-link {
+        font-size: 17px;
+
+        line-height: 1.65;
+    }
+
+
+    .about-campus-intro__description {
+        margin-top: 24px;
+    }
+
+
+    .about-campus-intro__aside-link {
+        margin-top: 24px;
+    }
+
+
+    .about-campus-intro__controls {
+        margin-top: 28px;
+
+        gap: 12px;
+    }
+
+
+    .about-campus-intro__control {
+        width: 68px;
+        height: 68px;
+    }
+
+
+    .about-campus-intro__control span {
+        font-size: 44px;
+    }
+
+}

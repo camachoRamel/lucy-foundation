@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Calendar</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="10" y="14" width="44" height="38" rx="4"/><path d="M18 8v12M46 8v12M10 25h44"/><path d="M20 34h6M32 34h6M44 34h2M20 43h6M32 43h6M44 43h2"/>
+  </g>
+</svg>

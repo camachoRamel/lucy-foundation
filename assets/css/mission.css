@@ -1,0 +1,553 @@
+/* ========================================
+   MISSION SECTION
+======================================== */
+
+.home-mission {
+    padding: 100px 0 110px;
+
+    background: var(--cream);
+}
+
+
+.home-mission__inner {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.9fr)
+        minmax(0, 1.1fr);
+
+    align-items: stretch;
+
+    gap: 0;
+}
+
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.home-mission__content {
+    padding:
+        20px
+        clamp(45px, 5vw, 80px)
+        20px
+        0;
+}
+
+
+/* Eyebrow */
+
+.home-mission__eyebrow {
+    margin-bottom: 38px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 28px;
+}
+
+
+.home-mission__eyebrow span {
+    color: var(--gold-dark);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    letter-spacing: 0.34em;
+
+    text-transform: uppercase;
+}
+
+
+.home-mission__eyebrow i {
+    width: 70px;
+    height: 1px;
+
+    display: block;
+
+    background: var(--gold);
+}
+
+
+/* Heading */
+
+.home-mission__title {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        48px,
+        5vw,
+        72px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.02;
+
+    letter-spacing: -0.035em;
+}
+
+
+/* Description */
+
+.home-mission__description {
+    max-width: 640px;
+
+    margin: 30px 0 0;
+
+    color: #384943;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 21px;
+
+    line-height: 1.55;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.home-mission__button {
+    width: min(100%, 365px);
+
+    min-height: 72px;
+
+    margin-top: 34px;
+
+    padding: 0 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #ffffff;
+
+    background: var(--green);
+
+    border-radius: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.home-mission__button > span:last-child {
+    color: var(--gold);
+
+    font-family: Arial, sans-serif;
+
+    font-size: 30px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.home-mission__button:hover {
+    background: var(--green-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.home-mission__button:hover > span:last-child {
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   VALUES
+======================================== */
+
+.mission-values {
+    margin-top: 65px;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+}
+
+
+.mission-value {
+    padding: 0 25px;
+
+    text-align: center;
+}
+
+
+.mission-value:first-child {
+    padding-left: 0;
+}
+
+
+.mission-value:last-child {
+    padding-right: 0;
+}
+
+
+.mission-value:not(:last-child) {
+    border-right:
+        1px solid rgba(11, 59, 45, 0.20);
+}
+
+
+/* Icon */
+
+.mission-value__icon {
+    width: 62px;
+    height: 62px;
+
+    margin: 0 auto 16px;
+
+    color: var(--gold-dark);
+}
+
+
+.mission-value__icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: currentColor;
+}
+
+
+/* Value heading */
+
+.mission-value h3 {
+    margin: 0;
+
+    color: var(--green);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 0.24em;
+
+    text-transform: uppercase;
+}
+
+
+.mission-value p {
+    margin: 8px 0 0;
+
+    color: #43534e;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    letter-spacing: 0.27em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   RIGHT IMAGE
+======================================== */
+
+.home-mission__visual {
+    position: relative;
+
+    min-height: 760px;
+
+    overflow: hidden;
+}
+
+
+.home-mission__visual img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.home-mission__quote {
+    position: absolute;
+
+    top: 65px;
+    right: 55px;
+
+    z-index: 2;
+
+    width: min(330px, 42%);
+
+    color: var(--green);
+}
+
+
+.home-mission__quote-mark {
+    position: absolute;
+
+    top: -30px;
+    left: -55px;
+
+    color: var(--gold-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 90px;
+
+    line-height: 1;
+}
+
+
+.home-mission__quote blockquote {
+    margin: 0;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        24px,
+        2.4vw,
+        34px
+    );
+
+    font-style: italic;
+
+    line-height: 1.22;
+}
+
+
+.home-mission__quote-line {
+    width: 70px;
+    height: 2px;
+
+    margin: 30px 0 22px;
+
+    background: var(--gold);
+}
+
+
+.home-mission__quote p {
+    margin: 0;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    line-height: 1.6;
+
+    letter-spacing: 0.31em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1050px) {
+
+    .home-mission {
+        padding: 85px 0;
+    }
+
+
+    .home-mission__inner {
+        grid-template-columns: 1fr;
+
+        gap: 55px;
+    }
+
+
+    .home-mission__content {
+        padding: 0;
+    }
+
+
+    .home-mission__title,
+    .home-mission__description {
+        max-width: 800px;
+    }
+
+
+    .home-mission__visual {
+        min-height: 620px;
+    }
+
+
+    .home-mission__quote {
+        width: 300px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .home-mission {
+        padding: 65px 0;
+    }
+
+
+    .home-mission__inner {
+        gap: 40px;
+    }
+
+
+    .home-mission__eyebrow {
+        margin-bottom: 25px;
+
+        gap: 18px;
+    }
+
+
+    .home-mission__eyebrow span {
+        font-size: 11px;
+
+        letter-spacing: 0.27em;
+    }
+
+
+    .home-mission__eyebrow i {
+        width: 45px;
+    }
+
+
+    .home-mission__title {
+        font-size: clamp(
+            40px,
+            12vw,
+            54px
+        );
+    }
+
+
+    .home-mission__description {
+        margin-top: 24px;
+
+        font-size: 17px;
+
+        line-height: 1.6;
+    }
+
+
+    .home-mission__button {
+        min-height: 62px;
+
+        padding-inline: 22px;
+
+        font-size: 17px;
+    }
+
+
+    /* Values stack */
+
+    .mission-values {
+        margin-top: 50px;
+
+        grid-template-columns: 1fr;
+
+        gap: 0;
+    }
+
+
+    .mission-value {
+        padding: 30px 0;
+    }
+
+
+    .mission-value:not(:last-child) {
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.20);
+    }
+
+
+    .mission-value__icon {
+        width: 55px;
+        height: 55px;
+    }
+
+
+    /* Image */
+
+    .home-mission__visual {
+        min-height: 570px;
+    }
+
+
+    .home-mission__visual img {
+        object-position: 40% center;
+    }
+
+
+    /* Quote */
+
+    .home-mission__quote {
+        top: 30px;
+        right: 22px;
+
+        width: 55%;
+    }
+
+
+    .home-mission__quote-mark {
+        left: -35px;
+
+        font-size: 65px;
+    }
+
+
+    .home-mission__quote blockquote {
+        font-size: 21px;
+    }
+
+
+    .home-mission__quote-line {
+        margin: 20px 0 16px;
+    }
+
+
+    .home-mission__quote p {
+        font-size: 9px;
+
+        letter-spacing: 0.22em;
+    }
+
+}

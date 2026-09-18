@@ -1,0 +1,668 @@
+/* ========================================
+   ENROL / PARTNER FORMS
+======================================== */
+
+.enrol-partner-forms {
+    padding: 90px 0 110px;
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   TWO-COLUMN GRID
+======================================== */
+
+.enrol-partner-forms__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 22px;
+
+    align-items: start;
+}
+
+
+/* ========================================
+   FORM CARD
+======================================== */
+
+.enrol-form-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+        1px solid rgba(11, 59, 45, 0.08);
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 12px 35px
+        rgba(0, 0, 0, 0.04);
+}
+
+
+/* ========================================
+   CARD IMAGE HEADER
+======================================== */
+
+.enrol-form-card__header {
+    position: relative;
+
+    height: 310px;
+
+    overflow: hidden;
+
+    color: #ffffff;
+}
+
+
+.enrol-form-card__header img {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+
+/* DARK IMAGE GRADIENT */
+
+.enrol-form-card__header-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(3, 37, 29, 0.83) 0%,
+            rgba(3, 37, 29, 0.64) 42%,
+            rgba(3, 37, 29, 0.20) 72%,
+            rgba(3, 37, 29, 0.03) 100%
+        );
+}
+
+
+/* ========================================
+   HEADER CONTENT
+======================================== */
+
+.enrol-form-card__header-content {
+    position: relative;
+
+    z-index: 1;
+
+    max-width: 470px;
+
+    padding:
+        55px
+        38px
+        35px;
+}
+
+
+.enrol-form-card__eyebrow {
+    margin: 0 0 14px;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 11px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.31em;
+
+    text-transform: uppercase;
+}
+
+
+.enrol-form-card__header-content h2 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        40px,
+        3.4vw,
+        56px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.035em;
+}
+
+
+.enrol-form-card__gold-line {
+    display: block;
+
+    width: 38px;
+    height: 2px;
+
+    margin: 20px 0;
+
+    background:
+        var(--gold);
+}
+
+
+.enrol-form-card__header-content > p:last-child {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.93);
+
+    font-size: 15px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   FORM BODY
+======================================== */
+
+.enrol-form-card__body {
+    padding:
+        28px
+        34px
+        34px;
+}
+
+
+/* ========================================
+   FORM GRID
+======================================== */
+
+.enrol-form {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 12px;
+}
+
+
+/* ========================================
+   FIELD
+======================================== */
+
+.enrol-field {
+    min-width: 0;
+}
+
+
+.enrol-field--full {
+    grid-column: 1 / -1;
+}
+
+
+/* Hide visible labels but keep them
+   available for screen readers */
+
+.enrol-field > label {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+
+    padding: 0;
+    margin: -1px;
+
+    overflow: hidden;
+
+    clip: rect(0, 0, 0, 0);
+
+    white-space: nowrap;
+
+    border: 0;
+}
+
+
+/* ========================================
+   INPUTS
+======================================== */
+
+.enrol-field input,
+.enrol-field select,
+.enrol-field textarea {
+    width: 100%;
+
+    color: #44534f;
+
+    background: #ffffff;
+
+    border:
+        1px solid
+        rgba(64, 81, 75, 0.25);
+
+    border-radius: 4px;
+
+    font-family: inherit;
+
+    font-size: 14px;
+}
+
+
+.enrol-field input,
+.enrol-field select {
+    min-height: 52px;
+
+    padding:
+        0
+        17px;
+}
+
+
+.enrol-field textarea {
+    min-height: 105px;
+
+    padding: 16px 17px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+}
+
+
+/* PLACEHOLDERS */
+
+.enrol-field input::placeholder,
+.enrol-field textarea::placeholder {
+    color: #697570;
+
+    opacity: 1;
+}
+
+
+/* SELECT */
+
+.enrol-field select {
+    appearance: none;
+    -webkit-appearance: none;
+
+    padding-right: 42px;
+
+    background-image:
+        linear-gradient(
+            45deg,
+            transparent 50%,
+            #294239 50%
+        ),
+        linear-gradient(
+            135deg,
+            #294239 50%,
+            transparent 50%
+        );
+
+    background-position:
+        calc(100% - 19px) 23px,
+        calc(100% - 14px) 23px;
+
+    background-size:
+        5px 5px,
+        5px 5px;
+
+    background-repeat: no-repeat;
+}
+
+
+/* FOCUS */
+
+.enrol-field input:focus,
+.enrol-field select:focus,
+.enrol-field textarea:focus {
+    outline: none;
+
+    border-color:
+        var(--gold);
+
+    box-shadow:
+        0 0 0 2px
+        rgba(226, 173, 55, 0.14);
+}
+
+
+/* ========================================
+   CHECKBOX
+======================================== */
+
+.enrol-checkbox {
+    grid-column: 1 / -1;
+
+    padding: 5px 0;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    cursor: pointer;
+}
+
+
+.enrol-checkbox input {
+    width: 20px;
+    height: 20px;
+
+    margin-top: 2px;
+
+    flex-shrink: 0;
+
+    accent-color:
+        var(--green);
+}
+
+
+.enrol-checkbox > span {
+    display: flex;
+    flex-direction: column;
+
+    gap: 3px;
+}
+
+
+.enrol-checkbox strong {
+    color: #364842;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.enrol-checkbox small {
+    color: #73807b;
+
+    font-size: 11px;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.enrol-form__submit {
+    grid-column: 1 / -1;
+
+    width: 100%;
+
+    min-height: 64px;
+
+    margin-top: 14px;
+
+    padding:
+        0
+        28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    color: #ffffff;
+
+    background:
+        var(--gold);
+
+    border: 0;
+
+    border-radius: 4px;
+
+    font-family: inherit;
+
+    font-size: 17px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.enrol-form__submit:hover {
+    background:
+        var(--gold-dark);
+
+    transform:
+        translateY(-2px);
+}
+
+
+.enrol-form__submit span {
+    font-size: 23px;
+
+    line-height: 1;
+
+    transition:
+        transform 0.2s ease;
+}
+
+
+.enrol-form__submit:hover span {
+    transform:
+        translateX(5px);
+}
+
+
+/* ========================================
+   BOTTOM TEXT
+======================================== */
+
+.enrol-form__footer-text {
+    grid-column: 1 / -1;
+
+    margin:
+        6px
+        0
+        0;
+
+    color: #78827e;
+
+    font-size: 12px;
+
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .enrol-partner-forms {
+        padding:
+            75px
+            0
+            90px;
+    }
+
+
+    .enrol-partner-forms__grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+
+    .enrol-form-card {
+        width: 100%;
+
+        max-width: 720px;
+
+        margin-inline: auto;
+    }
+
+
+    .enrol-form-card__header {
+        height: 330px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .enrol-partner-forms {
+        padding:
+            55px
+            0
+            70px;
+    }
+
+
+    .enrol-partner-forms__grid {
+        gap: 25px;
+    }
+
+
+    .enrol-form-card {
+        border-radius: 7px;
+    }
+
+
+    /* HEADER */
+
+    .enrol-form-card__header {
+        height: 275px;
+    }
+
+
+    .enrol-form-card__header-content {
+        padding:
+            38px
+            24px
+            28px;
+    }
+
+
+    .enrol-form-card__eyebrow {
+        font-size: 9px;
+
+        letter-spacing: 0.25em;
+    }
+
+
+    .enrol-form-card__header-content h2 {
+        font-size: clamp(
+            36px,
+            11vw,
+            48px
+        );
+    }
+
+
+    .enrol-form-card__header-content > p:last-child {
+        font-size: 13px;
+    }
+
+
+    /* FORM */
+
+    .enrol-form-card__body {
+        padding:
+            22px
+            18px
+            26px;
+    }
+
+
+    .enrol-form {
+        grid-template-columns: 1fr;
+
+        gap: 11px;
+    }
+
+
+    .enrol-field--full,
+    .enrol-checkbox,
+    .enrol-form__submit,
+    .enrol-form__footer-text {
+        grid-column: auto;
+    }
+
+
+    .enrol-field input,
+    .enrol-field select {
+        min-height: 50px;
+
+        font-size: 13px;
+    }
+
+
+    .enrol-field textarea {
+        font-size: 13px;
+    }
+
+
+    .enrol-form__submit {
+        min-height: 58px;
+
+        font-size: 15px;
+    }
+
+}
+
+/* ========================================
+   SELECTED FORM FOCUS
+======================================== */
+
+.enrol-form-card {
+    scroll-margin-top: 120px;
+
+    transition:
+        border-color 0.3s ease,
+        box-shadow 0.3s ease,
+        transform 0.3s ease;
+}
+
+
+.enrol-form-card--focused {
+    border-color:
+        rgba(226, 173, 55, 0.75);
+
+    box-shadow:
+        0 18px 45px
+        rgba(11, 59, 45, 0.12),
+        0 0 0 2px
+        rgba(226, 173, 55, 0.25);
+
+    transform:
+        translateY(-4px);
+}
+
+
+@media (max-width: 650px) {
+
+    .enrol-form-card {
+        scroll-margin-top: 90px;
+    }
+
+}

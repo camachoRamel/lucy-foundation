@@ -1,0 +1,140 @@
+/* ========================================
+   HOMEPAGE
+======================================== */
+
+.home {
+    background: var(--cream);
+}
+
+
+/* ========================================
+   SHARED HOMEPAGE SECTION SPACING
+======================================== */
+
+.home-section {
+    position: relative;
+    width: 100%;
+}
+
+
+/* ========================================
+   SHARED SECTION EYEBROW
+======================================== */
+
+.section-eyebrow {
+    margin: 0 0 24px;
+
+    color: var(--gold-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    letter-spacing: 0.28em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   SHARED HOMEPAGE HEADINGS
+======================================== */
+
+.section-title {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(42px, 5vw, 68px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+    letter-spacing: -0.03em;
+}
+
+
+/* ========================================
+   SHARED SECTION INTRO TEXT
+======================================== */
+
+.section-intro {
+    max-width: 760px;
+
+    margin: 22px 0 0;
+
+    color: #5f625f;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    line-height: 1.55;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .section-title {
+        font-size: clamp(
+            38px,
+            7vw,
+            56px
+        );
+    }
+
+
+    .section-intro {
+        font-size: 18px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .section-eyebrow {
+        margin-bottom: 18px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.22em;
+    }
+
+
+    .section-title {
+        font-size: clamp(
+            36px,
+            11vw,
+            50px
+        );
+    }
+
+
+    .section-intro {
+        margin-top: 16px;
+
+        font-size: 17px;
+
+        line-height: 1.55;
+    }
+
+}

@@ -1,0 +1,233 @@
+/* ========================================
+   CAMPUS SHOWCASE
+======================================== */
+
+.campus-showcase {
+    padding:
+        20px 24px
+        100px;
+
+    overflow: hidden;
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   TRACK
+======================================== */
+
+.campus-showcase__track {
+    display: grid;
+
+    grid-auto-flow: column;
+
+    grid-auto-columns:
+        calc((100vw - 120px) / 4);
+
+    gap: 12px;
+
+    overflow-x: auto;
+
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+    scrollbar-width: none;
+}
+
+
+.campus-showcase__track::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.campus-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    background: #ffffff;
+
+    border:
+        1px solid rgba(11, 59, 45, 0.10);
+
+    scroll-snap-align: start;
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.campus-card__image {
+    height: 360px;
+
+    overflow: hidden;
+}
+
+
+.campus-card__image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+
+.campus-card:hover
+.campus-card__image img {
+    transform: scale(1.025);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.campus-card__content {
+    min-height: 280px;
+
+    padding:
+        28px 38px
+        38px;
+}
+
+
+.campus-card__number {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--gold-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+}
+
+
+.campus-card h3 {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        28px,
+        2.2vw,
+        39px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.08;
+
+    letter-spacing: -0.025em;
+}
+
+
+.campus-card p {
+    margin: 17px 0 0;
+
+    color: #62706d;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .campus-showcase {
+        padding:
+            10px 30px
+            80px;
+    }
+
+
+    .campus-showcase__track {
+        grid-auto-columns:
+            calc((100vw - 90px) / 2);
+    }
+
+
+    .campus-card__image {
+        height: 310px;
+    }
+
+
+    .campus-card__content {
+        min-height: 245px;
+
+        padding: 26px 30px 34px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .campus-showcase {
+        padding:
+            5px 20px
+            65px;
+    }
+
+
+    .campus-showcase__track {
+        grid-auto-columns:
+            calc(100vw - 55px);
+
+        gap: 14px;
+    }
+
+
+    .campus-card__image {
+        height: 270px;
+    }
+
+
+    .campus-card__content {
+        min-height: 220px;
+
+        padding: 24px 25px 30px;
+    }
+
+
+    .campus-card__number {
+        font-size: 21px;
+    }
+
+
+    .campus-card h3 {
+        font-size: 30px;
+    }
+
+
+    .campus-card p {
+        font-size: 17px;
+    }
+
+}

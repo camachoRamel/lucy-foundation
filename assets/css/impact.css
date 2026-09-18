@@ -1,0 +1,324 @@
+/* ========================================
+   IMPACT
+======================================== */
+
+.home-impact {
+    padding: 110px 0 120px;
+
+    background: var(--cream);
+
+    color: var(--green);
+}
+
+
+/* Header */
+
+.home-impact__header {
+    max-width: 1100px;
+
+    margin: 0 auto 75px;
+
+    text-align: center;
+}
+
+
+.home-impact__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+
+    margin-bottom: 26px;
+}
+
+
+.home-impact__eyebrow span {
+    width: 74px;
+    height: 1px;
+
+    background: var(--gold);
+}
+
+
+.home-impact__eyebrow p {
+    margin: 0;
+
+    color: var(--gold-dark);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    letter-spacing: 0.38em;
+
+    text-transform: uppercase;
+}
+
+
+.home-impact__title {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(48px, 5.5vw, 72px);
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -0.035em;
+}
+
+
+.home-impact__intro {
+    max-width: 950px;
+
+    margin: 22px auto 0;
+
+    color: #60615f;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 22px;
+
+    line-height: 1.5;
+}
+
+
+/* Grid */
+
+.impact-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+}
+
+
+.impact-item {
+    min-height: 310px;
+
+    padding: 10px 35px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.impact-item:not(:last-child) {
+    border-right:
+        1px solid rgba(155, 121, 45, 0.28);
+}
+
+
+/* Icons */
+
+.impact-item__icon {
+    width: 76px;
+    height: 76px;
+
+    margin-bottom: 20px;
+
+    color: var(--gold-dark);
+}
+
+
+.impact-item__icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: currentColor;
+}
+
+
+/* Value */
+
+.impact-item__value {
+    color: var(--green);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 70px;
+
+    line-height: 1;
+}
+
+
+.impact-item__value--text {
+    margin-top: 10px;
+
+    font-size: 30px;
+
+    line-height: 1.15;
+}
+
+
+/* Label */
+
+.impact-item__label {
+    margin: 18px 0 0;
+
+    color: var(--green);
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.25;
+
+    text-transform: uppercase;
+}
+
+
+.impact-item__description {
+    margin: 14px 0 0;
+
+    color: #696967;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: 18px;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .home-impact {
+        padding: 90px 0;
+    }
+
+
+    .impact-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .impact-item {
+        padding: 40px 30px;
+    }
+
+
+    .impact-item:not(:last-child) {
+        border-right: 0;
+    }
+
+
+    .impact-item:nth-child(odd) {
+        border-right:
+            1px solid rgba(155, 121, 45, 0.28);
+    }
+
+
+    .impact-item:nth-child(-n + 2) {
+        border-bottom:
+            1px solid rgba(155, 121, 45, 0.28);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .home-impact {
+        padding: 70px 0;
+    }
+
+
+    .home-impact__header {
+        margin-bottom: 40px;
+    }
+
+
+    .home-impact__eyebrow {
+        gap: 16px;
+    }
+
+
+    .home-impact__eyebrow span {
+        width: 38px;
+    }
+
+
+    .home-impact__eyebrow p {
+        font-size: 12px;
+
+        letter-spacing: 0.28em;
+    }
+
+
+    .home-impact__title {
+        font-size: clamp(
+            40px,
+            12vw,
+            55px
+        );
+    }
+
+
+    .home-impact__intro {
+        font-size: 17px;
+    }
+
+
+    .impact-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .impact-item {
+        min-height: 0;
+
+        padding: 42px 15px;
+    }
+
+
+    .impact-item:nth-child(odd),
+    .impact-item:not(:last-child),
+    .impact-item:nth-child(-n + 2) {
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(155, 121, 45, 0.28);
+    }
+
+
+    .impact-item:last-child {
+        border-bottom: 0;
+    }
+
+
+    .impact-item__icon {
+        width: 62px;
+        height: 62px;
+    }
+
+
+    .impact-item__value {
+        font-size: 60px;
+    }
+
+
+    .impact-item__value--text {
+        font-size: 27px;
+    }
+
+}

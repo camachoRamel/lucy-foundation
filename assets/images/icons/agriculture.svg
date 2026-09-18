@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Agriculture</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M32 55V31"/><path d="M32 35c-11 0-17-6-17-17 11 0 17 6 17 17Z"/><path d="M32 28c11 0 17-6 17-17-11 0-17 6-17 17Z"/><path d="M18 55h28"/>
+  </g>
+</svg>

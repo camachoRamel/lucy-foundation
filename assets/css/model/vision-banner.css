@@ -1,0 +1,218 @@
+/* ========================================
+   MODEL VISION BANNER
+======================================== */
+
+.model-vision-banner {
+    position: relative;
+
+    min-height: 560px;
+
+    overflow: hidden;
+
+    color: #ffffff;
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND
+======================================== */
+
+.model-vision-banner__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../../images/model/vision-banner.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   OVERLAY
+======================================== */
+
+.model-vision-banner__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(1, 30, 24, 0.68) 0%,
+            rgba(1, 30, 24, 0.50) 32%,
+            rgba(1, 30, 24, 0.18) 62%,
+            rgba(1, 30, 24, 0.02) 100%
+        );
+}
+
+
+/* ========================================
+   INNER
+======================================== */
+
+.model-vision-banner__inner {
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   QUOTE
+======================================== */
+
+.model-vision-banner__content {
+    width: min(
+        650px,
+        50%
+    );
+}
+
+
+.model-vision-banner blockquote {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        46px,
+        4.5vw,
+        68px
+    );
+
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.025em;
+
+    text-shadow:
+        0 2px 14px
+        rgba(0, 0, 0, 0.20);
+}
+
+
+/* ========================================
+   GOLD LINE
+======================================== */
+
+.model-vision-banner__line {
+    width: 90px;
+    height: 3px;
+
+    display: block;
+
+    margin-top: 34px;
+
+    background: var(--gold);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .model-vision-banner,
+    .model-vision-banner__inner {
+        min-height: 520px;
+    }
+
+
+    .model-vision-banner__background {
+        background-position: 60% center;
+    }
+
+
+    .model-vision-banner__content {
+        width: 65%;
+    }
+
+
+    .model-vision-banner blockquote {
+        font-size: clamp(
+            40px,
+            6vw,
+            56px
+        );
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .model-vision-banner,
+    .model-vision-banner__inner {
+        min-height: 500px;
+    }
+
+
+    .model-vision-banner__background {
+        background-position: 68% center;
+    }
+
+
+    .model-vision-banner__overlay {
+        background:
+            linear-gradient(
+                90deg,
+                rgba(1, 30, 24, 0.82) 0%,
+                rgba(1, 30, 24, 0.62) 55%,
+                rgba(1, 30, 24, 0.28) 100%
+            );
+    }
+
+
+    .model-vision-banner__inner {
+        align-items: flex-end;
+    }
+
+
+    .model-vision-banner__content {
+        width: 100%;
+
+        padding-bottom: 55px;
+    }
+
+
+    .model-vision-banner blockquote {
+        max-width: 460px;
+
+        font-size: clamp(
+            34px,
+            10vw,
+            46px
+        );
+
+        line-height: 1.15;
+    }
+
+
+    .model-vision-banner__line {
+        width: 65px;
+
+        margin-top: 26px;
+    }
+
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <title>Skills Icon</title>
+  <desc>Gold line-art gear icon representing skills or vocational training.</desc>
+  <g stroke="#C9972E" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="64" cy="64" r="14"/>
+    <path d="M64 25v11"/>
+    <path d="M64 92v11"/>
+    <path d="M103 64h-11"/>
+    <path d="M36 64H25"/>
+    <path d="M91.58 36.42l-7.78 7.78"/>
+    <path d="M44.2 83.8l-7.78 7.78"/>
+    <path d="M91.58 91.58l-7.78-7.78"/>
+    <path d="M44.2 44.2l-7.78-7.78"/>
+    <path d="M58.5 18h11l3.4 12.31a35 35 0 0 1 10.11 4.19L94.2 27l7.78 7.78-7.5 11.19a35 35 0 0 1 4.19 10.11L111 58.5v11l-12.31 3.4a35 35 0 0 1-4.19 10.11L102 94.2 94.22 102l-11.21-7.5a35 35 0 0 1-10.1 4.19L69.5 111h-11l-3.41-12.31a35 35 0 0 1-10.1-4.19L33.78 102 26 94.22l7.5-11.21a35 35 0 0 1-4.19-10.1L17 69.5v-11l12.31-3.41a35 35 0 0 1 4.19-10.1L26 33.78 33.78 26l11.21 7.5a35 35 0 0 1 10.1-4.19L58.5 18Z"/>
+  </g>
+</svg>

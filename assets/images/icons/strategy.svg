@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Strategy</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="16" cy="48" r="4"/><circle cx="49" cy="14" r="4"/><path d="M20 46c8-4 13-10 17-18 2-5 5-8 8-10"/><path d="m40 15 9-1-2 9"/>
+  </g>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Parents</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="23" cy="20" r="7"/><circle cx="42" cy="27" r="5"/><path d="M10 52v-7c0-10 6-17 13-17 7 0 13 7 13 17v7M35 52v-4c0-7 4-12 9-12 5 0 9 5 9 12v4"/>
+  </g>
+</svg>

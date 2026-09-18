@@ -1,0 +1,372 @@
+/* ========================================
+   MODEL INTEGRATED PILLARS
+======================================== */
+
+.model-pillars {
+    padding: 85px 0 105px;
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.model-pillars__header {
+    margin-bottom: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.model-pillars__eyebrow,
+.model-pillars__statement {
+    margin: 0;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.30em;
+
+    text-transform: uppercase;
+}
+
+
+.model-pillars__eyebrow {
+    color: var(--green);
+}
+
+
+.model-pillars__statement {
+    color: #6b7471;
+
+    text-align: right;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.model-pillars__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.model-pillar-card {
+    min-width: 0;
+
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #ffffff;
+
+    border:
+        1px solid rgba(11, 59, 45, 0.10);
+}
+
+
+/* ========================================
+   IMAGE
+======================================== */
+
+.model-pillar-card__image {
+    height: 300px;
+
+    overflow: hidden;
+}
+
+
+.model-pillar-card__image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.4s ease;
+}
+
+
+.model-pillar-card:hover
+.model-pillar-card__image img {
+    transform: scale(1.025);
+}
+
+
+/* ========================================
+   CONTENT
+======================================== */
+
+.model-pillar-card__content {
+    min-height: 400px;
+
+    padding:
+        28px 30px
+        32px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.model-pillar-card__icon {
+    width: 66px;
+    height: 66px;
+
+    margin-bottom: 22px;
+
+    color: var(--gold-dark);
+}
+
+
+.model-pillar-card__icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+
+    stroke: currentColor;
+    stroke-width: 1.7;
+
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Book and leaf work better filled */
+
+.model-pillar-card:nth-child(2)
+.model-pillar-card__icon svg,
+.model-pillar-card:nth-child(3)
+.model-pillar-card__icon svg {
+    fill: none;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.model-pillar-card h3 {
+    margin: 0;
+
+    color: var(--green-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 27px;
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.model-pillar-card p {
+    margin: 18px 0 0;
+
+    color: #59635f;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+
+/* ========================================
+   LEARN MORE
+======================================== */
+
+.model-pillar-card__link {
+    width: fit-content;
+
+    margin-top: auto;
+
+    padding-top: 28px;
+
+    display: inline-flex;
+    align-items: center;
+
+    gap: 14px;
+
+    color: var(--green-dark);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    text-decoration: none;
+}
+
+
+.model-pillar-card__link span {
+    font-size: 23px;
+
+    line-height: 1;
+
+    transition: transform 0.2s ease;
+}
+
+
+.model-pillar-card__link:hover {
+    color: var(--gold-dark);
+}
+
+
+.model-pillar-card__link:hover span {
+    transform: translateX(5px);
+}
+
+
+/* ========================================
+   SMALL DESKTOP
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .model-pillars__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        gap: 20px;
+    }
+
+
+    .model-pillar-card__image {
+        height: 280px;
+    }
+
+
+    .model-pillar-card__content {
+        min-height: 330px;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 850px) {
+
+    .model-pillars {
+        padding: 75px 0 85px;
+    }
+
+
+    .model-pillars__header {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 14px;
+
+        margin-bottom: 28px;
+    }
+
+
+    .model-pillars__statement {
+        text-align: left;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .model-pillars {
+        padding: 60px 0 70px;
+    }
+
+
+    .model-pillars__eyebrow,
+    .model-pillars__statement {
+        font-size: 11px;
+
+        letter-spacing: 0.23em;
+    }
+
+
+    .model-pillars__grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .model-pillar-card__image {
+        height: 235px;
+    }
+
+
+    .model-pillar-card__content {
+        min-height: 0;
+
+        padding:
+            24px 22px
+            26px;
+    }
+
+
+    .model-pillar-card__icon {
+        width: 58px;
+        height: 58px;
+
+        margin-bottom: 18px;
+    }
+
+
+    .model-pillar-card h3 {
+        font-size: 26px;
+    }
+
+
+    .model-pillar-card p {
+        margin-top: 14px;
+
+        font-size: 16px;
+    }
+
+
+    .model-pillar-card__link {
+        margin-top: 24px;
+
+        padding-top: 0;
+    }
+
+}

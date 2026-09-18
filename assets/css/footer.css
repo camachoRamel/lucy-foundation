@@ -1,0 +1,566 @@
+/* ========================================
+   FOOTER
+======================================== */
+
+.site-footer {
+    width: 100%;
+
+    color: var(--green);
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   MAIN FOOTER
+======================================== */
+
+.site-footer__main {
+    padding: 65px 0 55px;
+}
+
+
+.site-footer__grid {
+    display: grid;
+
+    grid-template-columns:
+        1.05fr
+        0.85fr
+        1.05fr
+        0.9fr;
+
+    gap: 0;
+}
+
+
+/* ========================================
+   FOOTER COLUMNS
+======================================== */
+
+.footer-column {
+    padding: 10px 45px;
+}
+
+
+.footer-column h2 {
+    margin: 0 0 26px;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 24px;
+
+    line-height: 1.1;
+}
+
+
+/* ========================================
+   BRAND
+======================================== */
+
+.footer-brand {
+    padding-right: 50px;
+
+    text-align: center;
+
+    border-right:
+        1px solid rgba(11, 59, 45, 0.20);
+}
+
+
+.footer-brand__logo {
+    width: 165px;
+
+    margin: 0 auto 12px;
+
+    object-fit: contain;
+}
+
+
+.footer-brand__name {
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+    font-weight: 700;
+
+    line-height: 1.05;
+
+    letter-spacing: 0.03em;
+
+    text-transform: uppercase;
+}
+
+
+.footer-brand__motto {
+    margin-top: 12px;
+
+    color: var(--green);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+.footer-brand__motto strong {
+    color: var(--gold-dark);
+
+    font-weight: 600;
+}
+
+
+.footer-brand__motto span {
+    margin-inline: 5px;
+}
+
+
+.footer-brand__statement {
+    margin: 27px 0 0;
+
+    color: #31453e;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 18px;
+    font-style: italic;
+
+    line-height: 1.4;
+}
+
+
+/* ========================================
+   QUICK LINKS
+======================================== */
+
+.footer-links nav {
+    display: flex;
+    flex-direction: column;
+
+    gap: 14px;
+}
+
+
+.footer-links a {
+    width: fit-content;
+
+    color: #263c35;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    text-decoration: none;
+
+    transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.footer-links a:hover {
+    color: var(--gold-dark);
+
+    transform: translateX(4px);
+}
+
+
+/* ========================================
+   CONTACT
+======================================== */
+
+.footer-contact__item {
+    margin-bottom: 17px;
+
+    display: grid;
+
+    grid-template-columns:
+        30px 1fr;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: #263c35;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+}
+
+
+.footer-contact__item a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+.footer-contact__item a:hover {
+    color: var(--gold-dark);
+}
+
+
+.footer-contact__icon {
+    color: var(--gold-dark);
+
+    font-size: 22px;
+
+    text-align: center;
+}
+
+
+/* Contact quote */
+
+.footer-contact__quote {
+    margin-top: 32px;
+
+    padding-top: 25px;
+
+    border-top:
+        1px solid rgba(11, 59, 45, 0.25);
+}
+
+
+.footer-contact__quote p {
+    margin: 0;
+
+    color: #263c35;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+    font-style: italic;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   SOCIAL MEDIA
+======================================== */
+
+.footer-social__links {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.footer-social__links a {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    background: var(--green);
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.footer-social__links a:hover {
+    background: var(--gold-dark);
+
+    transform: translateY(-3px);
+}
+
+
+.footer-social__links span {
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+
+.footer-social__links svg {
+    width: 24px;
+    height: 24px;
+
+    fill: none;
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+}
+
+
+.footer-social__links a:last-child svg path {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+.footer-social__divider {
+    height: 1px;
+
+    margin: 35px 0 26px;
+
+    background:
+        rgba(11, 59, 45, 0.25);
+}
+
+
+.footer-social__text {
+    max-width: 280px;
+
+    margin: 0;
+
+    color: #263c35;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   BOTTOM BAR
+======================================== */
+
+.site-footer__bottom {
+    padding: 34px 0;
+
+    color: #ffffff;
+
+    background: var(--green-dark);
+}
+
+
+.site-footer__bottom-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 40px;
+}
+
+
+.site-footer__bottom p {
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 13px;
+
+    letter-spacing: 0.03em;
+}
+
+
+.site-footer__bottom-message {
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.site-footer__bottom-message span {
+    color: rgba(255, 255, 255, 0.90);
+
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 0.32em;
+
+    text-transform: uppercase;
+}
+
+
+.site-footer__bottom-message i {
+    width: 52px;
+    height: 4px;
+
+    display: block;
+
+    background: var(--gold);
+
+    border-radius: 5px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1050px) {
+
+    .site-footer__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+
+        row-gap: 55px;
+    }
+
+
+    .footer-brand {
+        border-right: 0;
+
+        text-align: left;
+    }
+
+
+    .footer-brand__logo {
+        margin-left: 0;
+    }
+
+
+    .footer-column,
+    .footer-brand {
+        padding:
+            0
+            35px;
+    }
+
+
+    .footer-links {
+        border-left:
+            1px solid rgba(11, 59, 45, 0.20);
+    }
+
+
+    .footer-social {
+        border-left:
+            1px solid rgba(11, 59, 45, 0.20);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .site-footer__main {
+        padding: 55px 0 45px;
+    }
+
+
+    .site-footer__grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .footer-column,
+    .footer-brand {
+        padding: 0;
+
+        border: 0;
+    }
+
+
+    .footer-brand {
+        text-align: left;
+    }
+
+
+    .footer-brand__logo {
+        width: 125px;
+
+        margin:
+            0 0
+            15px;
+    }
+
+
+    .footer-brand__name {
+        font-size: 18px;
+    }
+
+
+    .footer-column h2 {
+        margin-bottom: 20px;
+
+        font-size: 22px;
+    }
+
+
+    .footer-links a {
+        font-size: 16px;
+    }
+
+
+    .footer-social__links {
+        gap: 14px;
+    }
+
+
+    .footer-social__links a {
+        width: 44px;
+        height: 44px;
+    }
+
+
+    /* Bottom bar */
+
+    .site-footer__bottom {
+        padding: 28px 0;
+    }
+
+
+    .site-footer__bottom-inner {
+        flex-direction: column;
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+
+    .site-footer__bottom-message span {
+        font-size: 9px;
+
+        letter-spacing: 0.22em;
+    }
+
+
+    .site-footer__bottom-message i {
+        width: 35px;
+    }
+
+}

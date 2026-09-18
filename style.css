@@ -1,0 +1,194 @@
+/*
+Theme Name: Lucy Foundation Schools
+Theme URI: https://example.com
+Author: Kath
+Description: Custom WordPress theme for Lucy Gwatidzo Foundation Schools.
+Version: 1.0
+Text Domain: lucy-foundation
+*/
+
+
+/* ========================================
+   GLOBAL VARIABLES
+======================================== */
+:root {
+    --green: #0b3b2d;
+    --green-dark: #062c22;
+    --green-text: #123c30;
+
+    --gold: #e2ad37;
+    --gold-dark: #c99322;
+
+    --cream: #f7f4eb;
+    --white: #ffffff;
+
+    --container: 1340px;
+}
+
+
+/* ========================================
+   GLOBAL RESET
+======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+html {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+
+    width: 100%;
+
+    overflow-x: hidden;
+
+    color: var(--green-text);
+    background: var(--cream);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+}
+
+
+/* ========================================
+   IMAGES
+======================================== */
+
+img {
+    display: block;
+
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ========================================
+   LINKS
+======================================== */
+
+a {
+    color: inherit;
+
+    text-decoration: none;
+}
+
+
+/* ========================================
+   TYPOGRAPHY RESET
+======================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.btn {
+    min-height: 60px;
+
+    padding: 0 32px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    border: 2px solid transparent;
+    border-radius: 6px;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Gold button */
+
+.btn-gold {
+    color: var(--green-dark);
+
+    background: var(--gold);
+}
+
+
+.btn-gold:hover {
+    color: var(--green-dark);
+
+    background: var(--gold-dark);
+}
+
+
+/* Transparent outline button */
+
+.btn-outline-light {
+    color: var(--white);
+
+    background: transparent;
+
+    border-color: var(--gold);
+}
+
+
+.btn-outline-light:hover {
+    color: var(--green-dark);
+
+    background: var(--gold);
+}
+
+
+/* ========================================
+   GLOBAL CONTAINER
+======================================== */
+
+.container {
+    width: min(
+        calc(100% - 64px),
+        var(--container)
+    );
+
+    margin-inline: auto;
+}
+
+
+@media (max-width: 768px) {
+
+    .container {
+        width: calc(100% - 40px);
+    }
+
+}

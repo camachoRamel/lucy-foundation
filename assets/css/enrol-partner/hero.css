@@ -1,0 +1,600 @@
+/* ========================================
+   ENROL / PARTNER HERO
+======================================== */
+
+.enrol-partner-hero {
+    position: relative;
+
+    min-height: 650px;
+
+    overflow: hidden;
+
+    background: var(--cream);
+
+    isolation: isolate;
+}
+
+
+/* ========================================
+   BACKGROUND IMAGE
+======================================== */
+
+.enrol-partner-hero__background {
+    position: absolute;
+    inset: 0;
+
+    z-index: -3;
+
+    background-image:
+        url("../../images/enrol-partner/hero.png");
+
+    background-size: cover;
+
+    /*
+     * Pushes the landscape towards the
+     * right side like the reference.
+     */
+    background-position: 68% center;
+
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   WHITE BLEND
+======================================== */
+
+.enrol-partner-hero__overlay {
+    position: absolute;
+    inset: 0;
+
+    z-index: -2;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f7f4eb 0%,
+            #f7f4eb 34%,
+            rgba(247, 244, 235, 0.98) 40%,
+            rgba(247, 244, 235, 0.88) 46%,
+            rgba(247, 244, 235, 0.52) 53%,
+            rgba(247, 244, 235, 0.12) 62%,
+            rgba(247, 244, 235, 0) 72%
+        );
+}
+
+
+/* ========================================
+   INNER
+======================================== */
+
+.enrol-partner-hero__inner {
+    position: relative;
+
+    min-height: 650px;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* ========================================
+   LEFT CONTENT
+======================================== */
+
+.enrol-partner-hero__content {
+    width: min(700px, 55%);
+
+    padding:
+        65px 0
+        60px;
+}
+
+
+/* ========================================
+   EYEBROW
+======================================== */
+
+.enrol-partner-hero__eyebrow {
+    margin: 0 0 20px;
+
+    color: var(--green-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+    letter-spacing: 0.31em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   TITLE
+======================================== */
+
+.enrol-partner-hero__title {
+    max-width: 680px;
+
+    margin: 0;
+
+    color: var(--green-dark);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        58px,
+        5.8vw,
+        84px
+    );
+
+    font-weight: 400;
+
+    line-height: 0.98;
+
+    letter-spacing: -0.045em;
+}
+
+
+/* ========================================
+   LEAD
+======================================== */
+
+.enrol-partner-hero__lead {
+    max-width: 680px;
+
+    margin: 24px 0 0;
+
+    color: var(--green-dark);
+
+    font-size: 18px;
+    font-weight: 700;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.enrol-partner-hero__description {
+    max-width: 660px;
+
+    margin: 18px 0 0;
+
+    color: #4e5d59;
+
+    font-size: 17px;
+
+    line-height: 1.55;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.enrol-partner-hero__actions {
+    margin-top: 28px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.enrol-partner-hero__button {
+    min-height: 62px;
+
+    padding: 0 28px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 20px;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+/* Primary */
+
+.enrol-partner-hero__button--primary {
+    min-width: 300px;
+
+    color: #ffffff;
+
+    background: var(--gold);
+
+    border:
+        1px solid var(--gold);
+}
+
+
+.enrol-partner-hero__button--primary:hover {
+    background: var(--gold-dark);
+
+    border-color: var(--gold-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.enrol-partner-hero__button--primary span {
+    font-size: 22px;
+
+    transition: transform 0.2s ease;
+}
+
+
+.enrol-partner-hero__button--primary:hover span {
+    transform: translateX(5px);
+}
+
+
+/* Secondary */
+
+.enrol-partner-hero__button--secondary {
+    min-width: 245px;
+
+    color: var(--green-dark);
+
+    background: rgba(255, 255, 255, 0.54);
+
+    border:
+        1px solid rgba(11, 59, 45, 0.46);
+}
+
+
+.enrol-partner-hero__button--secondary:hover {
+    background: #ffffff;
+
+    border-color: var(--green);
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   RIGHT TEXT
+======================================== */
+
+.enrol-partner-hero__image-copy {
+    position: absolute;
+
+    top: 46px;
+    right: 20px;
+
+    width: 250px;
+}
+
+
+.enrol-partner-hero__values {
+    display: flex;
+    flex-direction: column;
+
+    gap: 13px;
+}
+
+
+.enrol-partner-hero__values span {
+    color: var(--green-dark);
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1;
+
+    letter-spacing: 0.28em;
+
+    text-transform: uppercase;
+}
+
+
+.enrol-partner-hero__gold-line {
+    width: 45px;
+    height: 2px;
+
+    display: block;
+
+    margin: 28px 0;
+
+    background: var(--gold-dark);
+}
+
+
+.enrol-partner-hero__message {
+    margin: 0;
+
+    color: var(--green-dark);
+
+    font-size: 12px;
+    font-weight: 700;
+
+    line-height: 1.7;
+
+    letter-spacing: 0.28em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   LOWER IMAGE CAPTION
+======================================== */
+
+.enrol-partner-hero__caption {
+    position: absolute;
+
+    right: 25px;
+    bottom: 28px;
+
+    margin: 0;
+
+    color: rgba(255, 255, 255, 0.96);
+
+    font-size: 10px;
+    font-weight: 700;
+
+    line-height: 1.65;
+
+    letter-spacing: 0.25em;
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 2px 8px
+        rgba(0, 0, 0, 0.35);
+}
+
+
+/* ========================================
+   SMALL DESKTOP
+======================================== */
+
+@media (max-width: 1200px) {
+
+    .enrol-partner-hero__content {
+        width: 58%;
+    }
+
+
+    .enrol-partner-hero__title {
+        font-size: clamp(
+            52px,
+            5.5vw,
+            72px
+        );
+    }
+
+
+    .enrol-partner-hero__image-copy {
+        right: 10px;
+
+        width: 210px;
+    }
+
+
+    .enrol-partner-hero__values span,
+    .enrol-partner-hero__message {
+        letter-spacing: 0.2em;
+    }
+
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 950px) {
+
+    .enrol-partner-hero {
+        min-height: 760px;
+    }
+
+
+    .enrol-partner-hero__background {
+        background-position: 62% center;
+    }
+
+
+    .enrol-partner-hero__overlay {
+        background:
+            linear-gradient(
+                180deg,
+                #f7f4eb 0%,
+                #f7f4eb 42%,
+                rgba(247, 244, 235, 0.92) 50%,
+                rgba(247, 244, 235, 0.35) 68%,
+                rgba(247, 244, 235, 0) 82%
+            );
+    }
+
+
+    .enrol-partner-hero__inner {
+        min-height: 760px;
+
+        align-items: flex-start;
+    }
+
+
+    .enrol-partner-hero__content {
+        width: 100%;
+
+        padding:
+            55px 0
+            350px;
+    }
+
+
+    .enrol-partner-hero__description {
+        max-width: 680px;
+    }
+
+
+    .enrol-partner-hero__image-copy {
+        top: auto;
+        right: 25px;
+        bottom: 100px;
+
+        width: 230px;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .enrol-partner-hero {
+        min-height: 850px;
+    }
+
+
+    .enrol-partner-hero__background {
+        background-position: 63% bottom;
+    }
+
+
+    .enrol-partner-hero__overlay {
+        background:
+            linear-gradient(
+                180deg,
+                #f7f4eb 0%,
+                #f7f4eb 47%,
+                rgba(247, 244, 235, 0.93) 54%,
+                rgba(247, 244, 235, 0.26) 72%,
+                rgba(247, 244, 235, 0) 88%
+            );
+    }
+
+
+    .enrol-partner-hero__inner {
+        min-height: 850px;
+    }
+
+
+    .enrol-partner-hero__content {
+        padding:
+            48px 0
+            390px;
+    }
+
+
+    .enrol-partner-hero__eyebrow {
+        margin-bottom: 17px;
+
+        font-size: 11px;
+
+        letter-spacing: 0.24em;
+    }
+
+
+    .enrol-partner-hero__title {
+        font-size: clamp(
+            43px,
+            13vw,
+            58px
+        );
+
+        line-height: 1;
+    }
+
+
+    .enrol-partner-hero__lead {
+        margin-top: 20px;
+
+        font-size: 16px;
+    }
+
+
+    .enrol-partner-hero__description {
+        font-size: 15px;
+
+        line-height: 1.6;
+    }
+
+
+    /* Buttons */
+
+    .enrol-partner-hero__actions {
+        flex-direction: column;
+        align-items: stretch;
+
+        gap: 12px;
+    }
+
+
+    .enrol-partner-hero__button--primary,
+    .enrol-partner-hero__button--secondary {
+        width: 100%;
+
+        min-width: 0;
+    }
+
+
+    /* Image copy */
+
+    .enrol-partner-hero__image-copy {
+        right: auto;
+        left: 20px;
+        bottom: 75px;
+
+        width: 210px;
+    }
+
+
+    .enrol-partner-hero__values {
+        gap: 9px;
+    }
+
+
+    .enrol-partner-hero__values span {
+        color: #ffffff;
+
+        font-size: 10px;
+
+        text-shadow:
+            0 2px 7px
+            rgba(0, 0, 0, 0.35);
+    }
+
+
+    .enrol-partner-hero__message {
+        color: #ffffff;
+
+        font-size: 9px;
+
+        text-shadow:
+            0 2px 7px
+            rgba(0, 0, 0, 0.35);
+    }
+
+
+    .enrol-partner-hero__caption {
+        display: none;
+    }
+
+}

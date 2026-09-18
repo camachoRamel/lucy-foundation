@@ -1,0 +1,550 @@
+/* ========================================
+   GET INVOLVED
+======================================== */
+
+.get-involved {
+    position: relative;
+
+    padding: 95px 0 150px;
+
+    overflow: hidden;
+
+    background: var(--cream);
+
+    color: var(--green);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.get-involved__header {
+    max-width: 900px;
+
+    margin: 0 auto 55px;
+
+    text-align: center;
+}
+
+
+.get-involved__eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
+
+    margin-bottom: 30px;
+}
+
+
+.get-involved__eyebrow span {
+    width: 72px;
+    height: 1px;
+
+    background: var(--gold);
+}
+
+
+.get-involved__eyebrow p {
+    margin: 0;
+
+    color: var(--gold-dark);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    letter-spacing: 0.3em;
+
+    text-transform: uppercase;
+}
+
+
+.get-involved__title {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(
+        48px,
+        5vw,
+        70px
+    );
+
+    font-weight: 400;
+
+    line-height: 1;
+
+    letter-spacing: -0.035em;
+}
+
+
+.get-involved__title span {
+    color: var(--gold);
+}
+
+
+.get-involved__intro {
+    margin: 25px 0 0;
+
+    color: #4f5d58;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 20px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.get-involved__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 22px;
+}
+
+
+/* ========================================
+   CARD
+======================================== */
+
+.involved-card {
+    min-height: 440px;
+
+    padding: 32px 28px 28px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.7);
+
+    border:
+        1px solid rgba(11, 59, 45, 0.10);
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 24px rgba(0, 0, 0, 0.04);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.involved-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.involved-card__icon {
+    width: 110px;
+    height: 110px;
+
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gold-dark);
+
+    background:
+        rgba(226, 173, 55, 0.09);
+
+    border-radius: 50%;
+}
+
+
+.involved-card__icon svg {
+    width: 58px;
+    height: 58px;
+
+    fill: currentColor;
+}
+
+
+/* ========================================
+   CARD TEXT
+======================================== */
+
+.involved-card h3 {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 25px;
+
+    line-height: 1.15;
+}
+
+
+.involved-card p {
+    margin: 22px 0 0;
+
+    color: #50605a;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 16px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   BUTTON
+======================================== */
+
+.involved-card__button {
+    width: 100%;
+
+    min-height: 60px;
+
+    margin-top: auto;
+
+    padding: 0 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 14px;
+
+    color: var(--green-dark);
+
+    background: var(--gold);
+
+    border-radius: 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+.involved-card__button:hover {
+    background: var(--gold-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   MOTTO
+======================================== */
+
+.get-involved__motto {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.get-involved__motto span {
+    width: 62px;
+    height: 1px;
+
+    background: var(--gold);
+}
+
+
+.get-involved__motto p {
+    margin: 0;
+
+    color: var(--green);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    letter-spacing: 0.34em;
+
+    text-transform: uppercase;
+}
+
+
+/* ========================================
+   HANDWRITING
+======================================== */
+
+.get-involved__handwriting {
+    position: absolute;
+
+    right: 20px;
+    bottom: 40px;
+
+    z-index: 3;
+
+    color: var(--green);
+
+    font-family:
+        "Brush Script MT",
+        "Segoe Script",
+        cursive;
+
+    font-size: 34px;
+
+    font-style: italic;
+
+    line-height: 1.05;
+
+    transform: rotate(-5deg);
+}
+
+
+.get-involved__handwriting span {
+    width: 100px;
+    height: 4px;
+
+    margin:
+        15px 0
+        0
+        35px;
+
+    display: block;
+
+    background: var(--gold);
+
+    transform: rotate(-7deg);
+}
+
+
+/* ========================================
+   BOTTOM WAVES
+======================================== */
+
+.get-involved__wave {
+    position: absolute;
+
+    left: -5%;
+
+    width: 110%;
+
+    pointer-events: none;
+}
+
+
+.get-involved__wave--one {
+    bottom: -105px;
+
+    height: 190px;
+
+    background: #edf0e8;
+
+    border-radius: 50% 50% 0 0 / 55% 55% 0 0;
+
+    transform: rotate(2deg);
+}
+
+
+.get-involved__wave--two {
+    bottom: -140px;
+
+    height: 190px;
+
+    background: #dfe5db;
+
+    border-radius: 50% 50% 0 0 / 50% 50% 0 0;
+
+    transform: rotate(-3deg);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1050px) {
+
+    .get-involved {
+        padding: 85px 0 130px;
+    }
+
+
+    .get-involved__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .involved-card {
+        min-height: 410px;
+    }
+
+
+    .get-involved__handwriting {
+        display: none;
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .get-involved {
+        padding: 65px 0 100px;
+    }
+
+
+    .get-involved__header {
+        margin-bottom: 40px;
+    }
+
+
+    .get-involved__eyebrow {
+        gap: 15px;
+
+        margin-bottom: 22px;
+    }
+
+
+    .get-involved__eyebrow span {
+        width: 38px;
+    }
+
+
+    .get-involved__eyebrow p {
+        font-size: 11px;
+
+        letter-spacing: 0.24em;
+    }
+
+
+    .get-involved__title {
+        font-size: clamp(
+            40px,
+            12vw,
+            54px
+        );
+    }
+
+
+    .get-involved__intro {
+        font-size: 17px;
+    }
+
+
+    .get-involved__intro br {
+        display: none;
+    }
+
+
+    .get-involved__grid {
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    .involved-card {
+        min-height: 0;
+
+        padding: 28px 22px;
+    }
+
+
+    .involved-card__icon {
+        width: 90px;
+        height: 90px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .involved-card__icon svg {
+        width: 48px;
+        height: 48px;
+    }
+
+
+    .involved-card h3 {
+        font-size: 23px;
+    }
+
+
+    .involved-card p {
+        margin-top: 17px;
+
+        font-size: 16px;
+    }
+
+
+    .involved-card__button {
+        margin-top: 28px;
+    }
+
+
+    .get-involved__motto {
+        margin-top: 40px;
+
+        gap: 12px;
+    }
+
+
+    .get-involved__motto span {
+        width: 30px;
+    }
+
+
+    .get-involved__motto p {
+        font-size: 10px;
+
+        letter-spacing: 0.2em;
+    }
+
+}

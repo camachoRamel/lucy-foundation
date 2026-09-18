@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>Community</title>
+  <g fill="none" stroke="#C7942D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="32" cy="19" r="7"/><circle cx="16" cy="26" r="5"/><circle cx="48" cy="26" r="5"/><path d="M21 50v-4c0-8 5-13 11-13s11 5 11 13v4M6 50v-3c0-6 4-10 10-10M58 50v-3c0-6-4-10-10-10"/>
+  </g>
+</svg>

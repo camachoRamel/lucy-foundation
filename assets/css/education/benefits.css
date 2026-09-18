@@ -1,0 +1,223 @@
+/* ========================================
+   EDUCATION BENEFITS
+======================================== */
+
+.education-benefits {
+    padding: 90px 0;
+
+    background: var(--cream);
+}
+
+
+/* ========================================
+   GRID
+======================================== */
+
+.education-benefits__grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    align-items: stretch;
+}
+
+
+/* ========================================
+   BENEFIT ITEM
+======================================== */
+
+.education-benefit {
+    min-width: 0;
+
+    padding: 10px 38px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+
+.education-benefit:not(:last-child) {
+    border-right:
+        1px solid rgba(11, 59, 45, 0.18);
+}
+
+
+/* ========================================
+   ICON
+======================================== */
+
+.education-benefit__icon {
+    width: 82px;
+    height: 82px;
+
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--gold-dark);
+}
+
+
+.education-benefit__icon svg {
+    width: 100%;
+    height: 100%;
+
+    fill: none;
+    stroke: currentColor;
+
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+
+/* Graduation icon needs fill */
+
+.education-benefit:first-child
+.education-benefit__icon svg {
+    fill: currentColor;
+    stroke: none;
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.education-benefit h3 {
+    margin: 0;
+
+    color: var(--green);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 28px;
+    font-weight: 400;
+
+    line-height: 1.15;
+
+    letter-spacing: -0.02em;
+}
+
+
+/* ========================================
+   DESCRIPTION
+======================================== */
+
+.education-benefit p {
+    margin: 18px 0 0;
+
+    color: #56615e;
+
+    font-size: 18px;
+
+    line-height: 1.45;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 1000px) {
+
+    .education-benefits {
+        padding: 75px 0;
+    }
+
+
+    .education-benefits__grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+
+    .education-benefit {
+        padding: 40px 30px;
+    }
+
+
+    .education-benefit:not(:last-child) {
+        border-right: 0;
+    }
+
+
+    .education-benefit:nth-child(odd) {
+        border-right:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    .education-benefit:nth-child(-n + 2) {
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .education-benefits {
+        padding: 55px 0;
+    }
+
+
+    .education-benefits__grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .education-benefit {
+        padding: 34px 15px;
+    }
+
+
+    .education-benefit:nth-child(odd),
+    .education-benefit:not(:last-child),
+    .education-benefit:nth-child(-n + 2) {
+        border-right: 0;
+
+        border-bottom:
+            1px solid rgba(11, 59, 45, 0.18);
+    }
+
+
+    .education-benefit:last-child {
+        border-bottom: 0;
+    }
+
+
+    .education-benefit__icon {
+        width: 65px;
+        height: 65px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .education-benefit h3 {
+        font-size: 24px;
+    }
+
+
+    .education-benefit p {
+        margin-top: 12px;
+
+        font-size: 16px;
+    }
+
+}
