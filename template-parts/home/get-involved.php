@@ -42,14 +42,14 @@
 
                 <div class="involved-card__icon">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M7 10 4 7l2-2 3 3 3-3 3 3 3-3 2 2-5 5-3-3-3 3-2-2zm-5 3h6l2 2h4l2-2h6v7H2v-7z"
-                        />
-                    </svg>
+                    <img
+                    src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                        '/assets/images/home/get-involved/investors.png'
+                    ); ?>"
+                    alt=""
+                    aria-hidden="true"
+                     >
 
                 </div>
 
@@ -82,14 +82,14 @@
 
                 <div class="involved-card__icon">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm6-1a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM9 13c-4 0-7 2-7 5v2h14v-2c0-3-3-5-7-5zm6 0c-.6 0-1.2.1-1.7.2 2.3 1.1 3.7 2.8 3.7 4.8v2h5v-2c0-3-3-5-7-5z"
-                        />
-                    </svg>
+                    <img
+                    src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                        '/assets/images/home/get-involved/parents.png'
+                    ); ?>"
+                    alt=""
+                    aria-hidden="true"
+                     >
 
                 </div>
 
@@ -122,14 +122,14 @@
 
                 <div class="involved-card__icon">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M4 3h16v12H9l-5 4V3zm3 3v2h10V6H7zm0 4v2h7v-2H7z"
-                        />
-                    </svg>
+                    <img
+                    src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                        '/assets/images/home/get-involved/teachers.png'
+                    ); ?>"
+                    alt=""
+                    aria-hidden="true"
+                     >
 
                 </div>
 
@@ -163,14 +163,14 @@
 
                 <div class="involved-card__icon">
 
-                    <svg
-                        viewBox="0 0 24 24"
-                        aria-hidden="true"
-                    >
-                        <path
-                            d="M3 5h18v14H3V5zm9 7L5 7v10h14V7l-7 5zm0-2 7-5H5l7 5z"
-                        />
-                    </svg>
+                    <img
+                    src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                        '/assets/images/home/get-involved/inquiries.png'
+                    ); ?>"
+                    alt=""
+                    aria-hidden="true"
+                     >
 
                 </div>
 
